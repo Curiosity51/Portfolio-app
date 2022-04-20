@@ -9,17 +9,16 @@ $color-alt: #ffc700;
 $background: linear-gradient(to right, #fe8c00, #f83600);
 
 .mobile-menu {
+  display: block;
 
   & ul {
     width: 100%;
     display: flex;
     flex-direction: column;
-
   }
 
   @media (min-width: 600px) {
     display: none;
-
   }
 }
 
@@ -28,22 +27,40 @@ $background: linear-gradient(to right, #fe8c00, #f83600);
   width: 100%;
   text-align: center;
 
-
   & a {
     text-decoration: none;
     color: #fff;
+    //font-size: 1.2em;
     text-transform: uppercase;
     padding: 1rem;
     display: block;
+    width: 100%;
   }
 
   &:hover {
-    background-color: color.scale($color, $lightness: 40%);
+    background: color.scale(#a6c1ee, $lightness: 40%);
+    //background-color: color.scale($color, $lightness: 40%);
     border-radius: 15px;
   }
 }
 
+.nav__toggle-btn {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+  @media (min-width: 600px) {
+    display: none;
+  }
+}
 
+.hamburger-react {
+  @media (min-width: 600px) {
+    display: none;
+  }
+}
 //.nav__menu {
 //  width: 100%;
 //

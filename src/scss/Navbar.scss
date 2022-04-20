@@ -7,16 +7,20 @@
 $color: #f83600;
 $color-alt: #ffc700;
 $background: linear-gradient(to right, #fe8c00, #f83600);
+$background2: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+$bg: linear-gradient(to right, #1f1c2c, #928dab);
+$bg2: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: $background;
+  background: color.scale(#a6c1ee, $lightness: 20%);
   color: #fff;
   font-family: $lato-font;
 
   &__logo {
+    width: 100%;
     font-size: 1.5rem;
     margin: 0.5rem;
     color: #fff;
@@ -36,3 +40,9 @@ $background: linear-gradient(to right, #fe8c00, #f83600);
   }
 }
 
+.test {
+  //width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}

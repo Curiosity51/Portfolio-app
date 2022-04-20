@@ -5,6 +5,7 @@ import Welcome from "./pages/Welcome";
 import AboutMe from "./pages/AboutMe";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
+import Kasia from "./pages/Kasia";
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <Navbar/>
             <Routes>
                 <Route path="/" element={<Welcome/>} />
+                <Route path="/kasia" element={<Kasia/>} />
                 <Route path="/about" element={<AboutMe/>} />
                 <Route path="/portfolio" element={<Portfolio/>} />
                 <Route path="/contact" element={<Contact/>} />

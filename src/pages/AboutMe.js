@@ -4,8 +4,9 @@ const AboutMe = () => {
     return (
         <div>
             <h1 style={{
-                fontSize: "80px"
-            }}> About me
+                fontSize: "60px",
+                color: 'white'
+            }} > About me
 
             </h1>
         </div>
