@@ -3,10 +3,8 @@
 $photo: url('../assets/IMG-8867.jpg');
 
 .container {
-  //background: linear-gradient(to right, #fe8c00, #f83600);
   max-width: 100%;
   max-height: 100vh;
-
   opacity: 0.7;
   display: flex;
   align-items: center;
@@ -16,11 +14,10 @@ $photo: url('../assets/IMG-8867.jpg');
   font-family: $lato-font;
   color: #fff;
 
-
   &__avatar {
     background-image: url('../assets/female-profile-filled-icon-196370 (1).png');
     background-size: cover;
-    background-position: contain;
+    background-position: center;
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -39,7 +36,6 @@ $photo: url('../assets/IMG-8867.jpg');
     justify-content: center;
     width: 400px;
     padding: 2.5em 0;
-    //border: 1px solid white;
 
     &-username {
       font-size: 2em;
@@ -59,18 +55,15 @@ $photo: url('../assets/IMG-8867.jpg');
       font-size: 1.5em;
       padding-bottom: 0.5em;
     }
-
     &-icons {
       display: flex;
       justify-content: center;
       padding: 0.5em;
-
       & svg {
         width: 3em;
         height: 3em;
         margin: 0.5em;
         transition: 0.5s;
-
         &:hover {
           transform: scale(1.5);
         }

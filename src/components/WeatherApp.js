@@ -18,15 +18,12 @@ const WeatherApp = () => {
                 });
         }
     }
-
     const showDate = () => {
-
         let d = new Date();
         let date = d.getDate();
         let year = d.getFullYear();
         let month = d.toLocaleString('default', {month: 'long'});
         let day = d.toLocaleString('default', {weekday: 'long'});
-
         return `${day} ${date} ${month} ${year}`;
     }
 
@@ -57,11 +54,7 @@ const WeatherApp = () => {
                 ) : (
                     <div className='message'> Welcome! Please enter in a city!</div>
                 )}
-
-
-
             </main>
-
         </div>
     );
 };

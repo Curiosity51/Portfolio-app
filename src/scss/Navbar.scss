@@ -4,13 +4,6 @@
 @import 'variables';
 @import 'fonts';
 
-$color: #f83600;
-$color-alt: #ffc700;
-$background: linear-gradient(to right, #fe8c00, #f83600);
-$background2: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
-$bg: linear-gradient(to right, #1f1c2c, #928dab);
-$bg2: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
-
 .nav {
   display: flex;
   justify-content: space-between;
@@ -18,31 +11,30 @@ $bg2: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
   background: color.scale(#a6c1ee, $lightness: 20%);
   color: #fff;
   font-family: $lato-font;
+  white-space: nowrap;
 
-  &__logo {
-    width: 100%;
-    font-size: 1.5rem;
-    margin: 0.5rem;
-    color: #fff;
-    text-decoration: none;
+  &__mobile {
+    display: flex;
+    justify-content: space-between;
+
+    &-logo {
+      width: 100%;
+      font-size: 1.5rem;
+      margin: 0.5rem;
+      color: #fff;
+      text-decoration: none;
+    }
   }
   @media (max-width: 600px) {
     flex-direction: column;
     align-items: flex-start;
   }
-}
 
-.nav__menu {
-  width: 70%;
+  &__menu {
+    width: 70%;
 
-  @media (max-width: 600px) {
-    width: 100%;
+    @media (max-width: 600px) {
+      width: 100%;
+    }
   }
-}
-
-.test {
-  //width: 100%;
-
-  display: flex;
-  justify-content: space-between;
 }

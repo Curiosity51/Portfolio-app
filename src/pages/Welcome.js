@@ -1,14 +1,8 @@
 import React from 'react';
+import Kasia from "./Kasia";
 
 const Welcome = () => {
-    return (
-        <h1 style={{
-            fontSize: "60px",
-            color: 'white'
-        }}> Hello
-            
-        </h1>
-    );
+    return <Kasia/>;
 };
 
 export default Welcome;

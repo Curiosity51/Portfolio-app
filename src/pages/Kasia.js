@@ -7,7 +7,6 @@ const Kasia = () => {
     return (
         <div className='container'>
             <div className='container__avatar' />
-
             <div className="container__details ">
                 <h2 className='container__details-username'>Katarzyna Durbas</h2>
                 <p className='container__details-description'>Front-end developer</p>
@@ -19,11 +18,7 @@ const Kasia = () => {
                     <FaHtml5 />
                     <FaCss3Alt />
                 </div>
-
             </div>
-
-
-
         </div>
     );
 };

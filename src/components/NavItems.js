@@ -18,7 +18,6 @@ const NavItems = () => {
                     <Link to="/contact">Contact</Link>
                 </li>
             </ul>
-
         </div>
     );
 };
